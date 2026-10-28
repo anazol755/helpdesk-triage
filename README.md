@@ -5,7 +5,7 @@ sends it to the Claude API, and returns a category, a priority, and the
 first troubleshooting steps a Tier 1 technician should try.
 
 I built this based on my experience as a Student IT Technician at the
-University of Maryland Eastern Shore, where I triaged tickets from
+where I triaged tickets from
 students and faculty.
 
 ## How it works
