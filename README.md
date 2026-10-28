@@ -23,7 +23,7 @@ the code or the repository.
 Requires Python 3 and a Claude API key from the Claude Console.
 
 ```bash
-git clone <this repo's URL>
+git clone https://github.com/anazol755/helpdesk-triage.git
 cd helpdesk-triage
 python3 -m venv .venv
 source .venv/bin/activate
