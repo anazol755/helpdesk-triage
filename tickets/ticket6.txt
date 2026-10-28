@@ -1,0 +1,3 @@
+User: Dana in the library
+Issue: The printer near the front desk says "offline" and nothing prints.
+It was working this morning. Other people are having the same problem.

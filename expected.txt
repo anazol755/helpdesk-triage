@@ -1,0 +1,6 @@
+ticket1: Network/Critical
+ticket2: Account/Access/High
+ticket3: Hardware/Critical
+ticket4: Software/Low
+ticket5: Network,Account/Access
+ticket6: Printing/Critical

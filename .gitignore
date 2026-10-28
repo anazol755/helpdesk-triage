@@ -1,0 +1,8 @@
+# Virtual environment (rebuilt from requirements.txt, never committed)
+.venv/
+
+# Python cache files
+__pycache__/
+
+# Secrets, in case a .env file is ever added
+.env

@@ -1,0 +1,50 @@
+===== tickets/ticket1.txt
+Category: Network
+Priority: Critical
+Steps:
+1. Ask the lab assistant or check the monitoring dashboard to see whether other Science Building rooms or campus services are also down. If the outage is wider than room 204, escalate to the network on-call team immediately.
+2. On one lab PC, run `ipconfig` (Windows) or check network settings to see whether it has an IP address and gateway. If it shows a self-assigned 169.254.x.x address, DHCP is failing. If it has a valid address, test with `ping 8.8.8.8` to separate an internet problem from a DNS problem.
+3. Check the lab's network switch and wall jacks for power and link lights, and confirm the patch cable from the wall to the switch is seated. Power-cycle the room's switch if it is unresponsive and safe to do so.
+4. Check the Science Building's distribution switch and uplink to the core network for alerts or errors. Escalate to the network team if the uplink or core is the cause.
+5. Update the lab assistant with status and an estimated restoration time. If service won't be back within the hour, arrange an alternate lab or a backup plan for the class.
+
+===== tickets/ticket2.txt
+Category: Account/Access
+Priority: High
+Steps:
+1. Verify the student's identity, then check the account status in the directory service and unlock it if it is locked.
+2. Have the student confirm they are entering the new password exactly, including checking Caps Lock and keyboard layout, and try logging into the university web portal.
+3. Confirm the new password meets policy and wait 15 to 30 minutes for the change to sync across systems, then retry login.
+4. Check for old saved credentials on the student's phone, email client, or other devices that may be repeatedly submitting the previous password and re-locking the account, and remove or update them.
+5. If the lockout persists, reset the password to a temporary one, have the student change it on a single device, and escalate to Tier 2 if sign-in still fails.
+
+===== tickets/ticket3.txt
+Category: Hardware
+Priority: High
+Steps:
+1. Check that the video cable is firmly connected at both the laptop and the projector. Confirm it's in the correct input port.
+2. Press the projector's Input or Source button to cycle to the port the cable is plugged into. "No Signal" often means the projector is on the wrong input.
+3. Confirm the laptop is sending video to the projector. Press Windows+P (or Fn+F7/F8, or Command+F1 on a Mac) and choose "Duplicate" or "Extend."
+4. Swap in a spare HDMI or VGA cable, or try a different input port on the projector. If the professor has a second laptop, test with it to isolate whether the problem is the laptop or the projector.
+5. If the signal still doesn't appear within about 10 minutes, tell the professor now so they can move to a backup room or use a backup presentation method, and dispatch a technician to Room 112.
+
+===== tickets/ticket4.txt
+Category: Software
+Priority: Low
+Steps:
+1. Confirm the faculty member's name, office computer asset tag or hostname, and that they hold a valid SPSS license through the university or department.
+2. Check the software license portal or license server to confirm seats are available and that the faculty member is eligible for the installation.
+3. Verify the office computer meets SPSS's minimum system requirements and that the operating system is up to date.
+4. Schedule the installation through the software deployment tool or a remote session, or arrange an in-person visit if remote installation isn't possible.
+5. After installation, launch SPSS to confirm it activates and opens correctly, then notify the faculty member and close the ticket.
+
+===== tickets/ticket5.txt
+Category: Network
+Priority: Medium
+Steps:
+1. Ask the student whether Canvas loads on other devices or for other users, and check the campus Canvas status page for outages.
+2. Confirm the laptop is connected to the correct campus Wi-Fi network and that internet browsing works for other sites.
+3. Have the student open Canvas in a private/incognito window, or in a different browser, and clear the cache and cookies for the Canvas domain.
+4. Check the exact error message or URL the student sees, and verify the laptop's date and time settings are correct.
+5. If the problem continues, escalate to Tier 2 with the error text, the browser used, and the results of the steps above.
+

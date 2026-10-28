@@ -1,0 +1,66 @@
+===== tickets/ticket1.txt
+Category: Network
+Priority: Critical
+Needs info: None
+Steps:
+1. Confirm the scope. Ask the lab assistant whether a phone on the lab Wi-Fi or a computer in another room in the Science Building also has no internet. This tells you whether the problem is limited to room 204.
+2. Check the lab's network switch and wall ports. Look for link lights on the switch and confirm it has power. If the switch is powered off or its lights are dead, power-cycle it, but only if it's safe and the switch is not shared with other critical systems.
+3. Check the network monitoring dashboard or alerts for an outage affecting the Science Building or its network closet, and check the core or distribution switch that serves the building.
+4. On one affected lab PC, run `ipconfig` (Windows) or `ifconfig` (macOS/Linux). An address starting with 169.254 means the PC isn't receiving an IP from DHCP. Renew the lease with `ipconfig /release` and `ipconfig /renew`. If that fails, escalate to the Network team as a DHCP or uplink problem.
+5. If the issue isn't resolved within about 20 minutes, escalate to the Network on-call team with the building, room, symptoms, and the class start time. Ask the lab assistant to identify a backup room with working internet in case the class must move.
+
+===== tickets/ticket2.txt
+Category: Account/Access
+Priority: High
+Needs info: None
+Steps:
+1. Verify the student's identity using the university's standard process (for example, student ID or a callback to the registered phone or email), then confirm the account username.
+2. Check the account in the directory or identity system to confirm it is locked, and note the lockout time and any failed sign-in attempts. Unlock the account if the lockout is confirmed.
+3. Ask the student to sign in to the self-service password portal, or reset the password through the approved process, using a password that meets the current policy. Confirm the new password works on a web login such as the LMS or student email.
+4. Have the student clear saved or old passwords on their devices and in any apps, such as email clients, Wi-Fi profiles, or mobile apps, then sign in again. Old credentials often trigger repeated lockouts after a password change.
+5. If the lockout returns or the reset fails, check for a sync delay, an expired account status, or a policy restriction, and escalate to Tier 2 with the lockout timestamps and steps already taken. Given the assignment deadline tonight, tell the student how to contact their instructor about a possible extension in case access is not restored in time.
+
+===== tickets/ticket3.txt
+Category: Hardware
+Priority: Critical
+Needs info: None
+Steps:
+1. Ask the professor to confirm the laptop's display output is on. Press Fn+F7 (or the display key), or use Win+P (Windows) or System Settings > Displays (Mac) to select "Duplicate" or "Mirror." Also cycle the projector's input source with the remote (HDMI, VGA, etc.) to match the cable in use.
+2. Check that the cable is firmly seated at both the laptop and projector ends. Reseat it, or swap in a known-good cable if one is available.
+3. Test the classroom's lectern PC or a second input port on the projector. This tells you whether the problem is the laptop or the projector.
+4. Check the projector's status light and on-screen messages for errors such as lamp failure or overheating. Confirm it is not stuck in standby or cooldown, then power-cycle it and wait for it to finish warming up.
+5. If the projector still shows No Signal, notify the on-site AV or classroom support team and the department, and arrange a backup room or equipment before the lecture starts.
+
+===== tickets/ticket4.txt
+Category: Software
+Priority: Low
+Needs info: None
+Steps:
+1. Check the software catalog or licensing portal to confirm the faculty member is entitled to SPSS and whether the university provides a licensed copy or a campus-wide download.
+2. Verify the office computer meets SPSS's system requirements (OS version, available disk space, and admin rights) and note the asset tag.
+3. Confirm with the faculty member that the office computer is university-owned and that they have a campus account they can use to activate the license.
+4. Schedule the installation through the normal software request queue, and install SPSS with the licensed installer or deployment tool, then activate the license.
+5. Test that SPSS launches and opens a sample dataset, then close the ticket and let the faculty member know it is ready.
+
+===== tickets/ticket5.txt
+Category: Software
+Priority: High
+Needs info: When the student tries to open Canvas, what happens: is there an error message (and what does it say), does the page never load, or does it load but fail at login? Also, do other websites work on this laptop, and does Canvas work on the student's phone or another device?
+Steps:
+1. Confirm the laptop is connected to the internet by loading a non-Canvas site (for example, google.com). If other sites fail, troubleshoot the Wi-Fi connection first (reconnect, forget and rejoin the network, or try a wired connection).
+2. Check the Canvas status page or the university's IT announcements to rule out a known outage.
+3. Have the student open Canvas in a private/incognito window, then in a different browser (Chrome, Firefox, or Edge). If it works, clear the original browser's cache and cookies, or disable extensions that may block the site.
+4. Check the laptop's date and time settings are set to automatic, since incorrect time can cause secure-connection errors.
+5. If the problem continues, record the exact error message and the browser and operating system versions, then escalate to Tier 2 or the Canvas support team.
+
+===== tickets/ticket6.txt
+Category: Printing
+Priority: Critical
+Needs info: None
+Steps:
+1. Check the printer's front panel or display for error messages, and confirm it has power, paper, and toner. Make sure the network cable is seated or that the Wi-Fi light is on.
+2. Power cycle the printer: turn it off, wait 30 seconds, and turn it back on. Allow 2 to 3 minutes for it to reconnect to the network.
+3. From a affected workstation, ping the printer's IP address (found on the printer's config page) to confirm it's reachable. If the ping fails, the problem is likely the network or the printer's network connection, not the computer.
+4. Check whether the print queue is stuck. Clear all pending jobs on the affected workstations and in the print server, then resend a test page.
+5. If the printer still shows offline, check whether its IP address changed (for example, after a DHCP lease renewal) and update the workstation or print server to the current address. If the problem persists, escalate to Network or Hardware support, since several users are affected.
+
